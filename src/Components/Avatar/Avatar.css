@@ -1,0 +1,113 @@
+.avatar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.avatar img {
+    margin-top: 0px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.avatar h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.avatar h1 span {
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.avatar p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.avatar-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.avatar-connect {
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+    font-size: medium;
+}
+
+.avatar-resume {
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.avatar-resume a {
+    text-decoration: none;
+    color: inherit; /* Optional: to inherit the color from the parent */
+}
+
+.avatar-connect:hover {
+    border: 2px solid whitesmoke;
+}
+
+.avatar-resume:hover {
+    border: 2px solid rgb(156, 4, 156);
+}
+
+@media(max-width:500px) {
+
+    .avatar {
+        margin: 30px;
+        width: 425px;
+    }
+
+    .avatar img {
+        width: 175px;
+    }
+
+    .avatar h1 {
+        margin-left: 20px;
+        margin-top: 50px;
+        width: 125%;
+        font-size: 50px;
+    }
+
+    .avatar p {
+        width: 60%;
+        font-size: 18px;
+        line-height: 30px;
+        margin: 10px 0px;
+    }
+
+    .avatar-action {
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .avatar-connect {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+    .avatar-resume {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+}

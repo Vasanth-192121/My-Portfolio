@@ -1,0 +1,130 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 140px;
+}
+
+.services-title {
+    position: relative;
+}
+
+.services-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.services-title img {
+    position: absolute;
+    height: 120px;
+    bottom: 50px;
+    right: -20px;
+    z-index: -1;
+}
+
+.services-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 40px;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.services-format h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.services-format h2 {
+    font-size: 34px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #DA7C25 50%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+    color: whitesmoke;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 300px;
+}
+
+.services-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    white-space: nowrap;
+}
+
+.services-format:hover {
+    border: 2px solid #ff00ff;
+    background: linear-gradient(45deg, #3f0028, #582300);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media(max-width : 500px) {
+    .services {
+        align-items: start;
+        gap: 70px;
+        margin: 20px 10px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .services-title h1 {
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .services-title img {
+        bottom: 20px;
+        right: -60px;
+    }
+
+    .services-format {
+        gap: 20px;
+        padding: 32px;
+    }
+
+    .services-format h2 {
+        font-size: 28px;
+    }
+
+    .services-format p {
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+
+    .services-readmore img {
+        width: 20px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        
+    }
+}
