@@ -14,22 +14,25 @@ const MyWork = () => {
       <div className="mywork-container">
         {mywork_data.map((work, index) => {
           return (
-            <img 
-              key={index} 
-              src={work.w_img} 
-              onClick={() => {
-                if (work.w_url) {
-                  window.location.href = work.w_url;
-                }
-              }}
-              alt="" 
-              height={"200px"}
-            />)
+            <div className='show-more'>
+              <img 
+                key={index} 
+                src={work.w_img} 
+                onClick={() => {
+                  if (work.w_url) {
+                    window.location.href = work.w_url;
+                  }
+                }}
+                alt="" 
+                height={"200px"}
+              />
+              <p onClick={() => {
+                  if (work.w_url) {
+                    window.location.href = work.w_url;
+                  }
+                }}>Live Demo</p>
+            </div>)
         })}
-      </div>
-      <div className="mywork-showmore">
-        <p>Show More</p>
-        <img src={arrow_icon} alt="" />
       </div>
     </div>
   )

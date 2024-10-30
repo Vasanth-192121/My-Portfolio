@@ -16,12 +16,14 @@ const mywork_data = [
     {
         w_no : 2,
         w_name : "Web Development",
-        w_img : project4_img
+        w_img : project4_img,
+        w_url : "https://vasanth-192121.github.io/delivery-site-just-by-using-only-bootstrap/"
     },
     {
         w_no : 3,
         w_name : "Web Development",
-        w_img : project1_img
+        w_img : project1_img,
+        w_url : "https://my-portfolio-public-nu.vercel.app/"
     },
     {
         w_no : 4,

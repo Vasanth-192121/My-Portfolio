@@ -29,8 +29,8 @@ function Navbar() {
         <li> <AnchorLink className='anchor-link' href='#home'> <p onClick={() => {setMenu("home")}} >Home</p> </AnchorLink> {menu === "home" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
         <li> <AnchorLink className='anchor-link' offset={50} href='#about'> <p onClick={() => {setMenu("about")}} >About Me</p> </AnchorLink> {menu === "about" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
         <li> <AnchorLink className='anchor-link' offset={50} href='#services'> <p onClick={() => {setMenu("skills")}} >Skills</p> </AnchorLink> {menu === "skills" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
-        <li> <AnchorLink className='anchor-link' offset={50} href='#work'> <p onClick={() => {setMenu("contact")}} >Contact</p> </AnchorLink> {menu === "contact" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
-        <li> <AnchorLink className='anchor-link' offset={50} href='#contact'> <p onClick={() => {setMenu("portfolio")}} >Portfolio</p> </AnchorLink> {menu === "portfolio" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
+        <li> <AnchorLink className='anchor-link' offset={50} href='#work'> <p onClick={() => {setMenu("contact")}} >Projects</p> </AnchorLink> {menu === "contact" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
+        <li> <AnchorLink className='anchor-link' offset={50} href='#contact'> <p onClick={() => {setMenu("portfolio")}} >Contact</p> </AnchorLink> {menu === "portfolio" ? <img src={underline} alt='' width={"75px"}/> : null}</li>
       </ul>
       <div className="nav-connect"> <AnchorLink className='anchor-link' offset={50} href='#contact'> Connect with Me </AnchorLink></div>
     </div>
