@@ -2,7 +2,7 @@ import React from 'react';
 import "./Avatar.css";
 import avatar from "../../assets/Avatar.jpg";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import resume from "../../assets/Resume/Vasanthamohan_R.pdf"
+import resume from "../../assets/Resume/Vasanthamohan-R.pdf"
 
 function Avatar() {
   return (
