@@ -1,8 +1,6 @@
-import React from 'react'
 import './MyWork.css'
 import theme from "../../assets/Untitled design.png";
 import mywork_data from "../../Utils/mywork_data"
-import arrow_icon from "../../assets/arrow_icon.svg"
 
 const MyWork = () => {
   return (
@@ -14,16 +12,16 @@ const MyWork = () => {
       <div className="mywork-container">
         {mywork_data.map((work, index) => {
           return (
-            <div className='show-more'>
-              <img 
-                key={index} 
-                src={work.w_img} 
+            // The key prop should be on the outermost element of the mapped list
+            <div className='show-more' key={index}>
+              <img
+                src={work.w_img}
                 onClick={() => {
                   if (work.w_url) {
                     window.location.href = work.w_url;
                   }
                 }}
-                alt="" 
+                alt=""
                 height={"200px"}
               />
               <p onClick={() => {
@@ -31,7 +29,8 @@ const MyWork = () => {
                     window.location.href = work.w_url;
                   }
                 }}>Live Demo</p>
-            </div>)
+            </div>
+          )
         })}
       </div>
     </div>

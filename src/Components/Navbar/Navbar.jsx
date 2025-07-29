@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.svg'
 import underline from "../../assets/Underline.png"
